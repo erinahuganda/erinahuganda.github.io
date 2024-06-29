@@ -24,11 +24,11 @@
             <div class="row nav-row">
                 <div class="col-lg-3 col-md-12 logo">
                     <a href="index.html">
-                        <img src="assets/images/ErinahUgLogo.png" alt="erinahlogo" style='height: 60px;'>
-                        <!-- <p>Erinah Uganda</p> -->
-                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                        <img src="assets/images/ErinahUgLogo.png" alt="erinahlogo">
+                        <a data-toggle="collapse" data-target="#menu" href="#menu">
+                          <i class="fas d-block d-lg-none small-menu fa-bars"></i>
+                        </a>
                     </a>
-
                 </div>
                 <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
 
@@ -115,7 +115,7 @@
 
         <div class="row natur-row no-margin w-100">
             <div class="text-part col-md-6">
-                <h2>Who are we</h2>
+                <h2>Who are we</h2> <!-- who we are -->
                 <p>Erinah Uganda is a not-for-profit organization based in Kampala, Uganda. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius faucibus
                     ligula non congue. Suspendisse at pretium massa, sit amet
                     vulputate nibh. Nam posuere eros dolor. Donec vel arcu sagittis, pretium nisl </p>
@@ -263,11 +263,10 @@
     <div class="container">
           <div class="d-md-flex cta-20101 align-self-center bg-light p-5">
             <div class=""><h3 class="text-cursive">Giving hope to Orphans, the Needy and Vulnerable</h3></div>
-            <div class="ml-auto"><a href="donate.html" class="btn btn-primary">Donate Now</a></div>
+            <div class="ml-auto">
+              <a href="donate.html" class="btn btn-primary">Donate Now</a>
+            </div>
           </div>
-
-          
-      
     </div>
   </div>
    
@@ -283,12 +282,12 @@
           </div>
           <div class="row align-items-stretch">
   
-            <div class="col-lg-4 col-md-6 mb-5">
+            <div class="col-lg-6 col-md-6 mb-5">
               <div class="post-entry-1 h-100 bg-white text-center">
-                <a href="#" class="d-inline-block">
+                <div class="d-inline-block">
                   <img src="assets/images/team/person_1.jpg" alt="Image"
                    class="img-fluid">
-                </a>
+                </div>
                 <div class="post-entry-1-contents">
                   <span class="meta">Founder</span>
                   <h2>James Doe</h2>
@@ -296,28 +295,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-5">
+            <div class="col-lg-6 col-md-6 mb-5">
               <div class="post-entry-1 h-100 bg-white text-center">
-                <a href="#" class="d-inline-block">
+                <div class="d-inline-block">
                   <img src="assets/images/team/person_2.jpg" alt="Image"
                    class="img-fluid">
-                </a>
-                <div class="post-entry-1-contents">
-                  <span class="meta">Volunteer</span>
-                  <h2>James Doe</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
                 </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="post-entry-1 h-100 bg-white text-center">
-                <a href="#" class="d-inline-block">
-                  <img src="assets/images/team/person_3.jpg" alt="Image"
-                   class="img-fluid">
-                </a>
                 <div class="post-entry-1-contents">
-                  <span class="meta">Volunteer</span>
+                  <span class="meta">Founder</span>
                   <h2>James Doe</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
                 </div>
@@ -372,7 +357,7 @@
             
             
             
-            <div class="nav-box row clearfix">
+            <!-- <div class="nav-box row clearfix">
                 <div class="inner col-md-9 clearfix">
                         <ul class="ulright">
                            <li> <large>Follow Us </large>:</li>
@@ -391,7 +376,30 @@
                         </ul>
                 </div>
                   <div class="donate-link col-md-3"><a href="donate.html" class="btn btn-primary "><span class="btn-title">Donate Now</span></a></div>
-            </div>
+            </div> -->
+
+            <div class="nav-box row clearfix ">
+              <div class="inner col-md-9 col-sm-12 clearfix">
+                <ul class="ulright">
+                    <li><large>Follow Us</large>:</li>
+                      <li><i class="fab fa-facebook-square"></i></li>
+                      <li><i class="fab fa-twitter-square"></i></li>
+                      <li><i class="fab fa-instagram"></i></li>
+                      <li><i class="fab fa-linkedin"></i></li>
+                  </ul>
+              </div>
+              <!-- <div class="donate-link col-md-3 col-sm-12 border border-success">
+                <a href="donate.html" class="btn btn-primary">
+                  <span class="btn-title">Donate Now</span>
+                </a>
+              </div> -->
+              <div class="donate-link">
+                <a href="donate.html" class="btn btn-primary">
+                  <span class="btn-title">Donate Now</span>
+                </a>
+              </div>
+          </div>
+          
         </div>
     </footer>        
 </body>
