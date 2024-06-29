@@ -247,7 +247,7 @@ body {
   max-width: 1170px; }
   @media screen and (max-width: 575px) {
     .container {
-      padding: 10px 15px; } }
+      padding: 5px 15px; } }
 
 /* =================== Header Style Starts Here =================== */
 header {
@@ -256,7 +256,7 @@ header {
   width: 100%;
   z-index: 99; }
   header .logo {
-    padding-top: 6px; }
+    padding-top: 0px; }
   header .header-top {
     background-color: #fff;
     border-bottom: 1px solid #d3d7cea6;
@@ -297,6 +297,10 @@ header {
   header .header-bottom {
     padding: 6px;
     background-color: #fff; }
+
+    header .header-bottom img {
+      height: 65px;
+    }
     @media screen and (max-width: 991px) {
       header .header-bottom {
         padding: 0px; height: 60px; } }
@@ -304,7 +308,8 @@ header {
       header .header-bottom img {
         padding: 5px;
         margin-top: 0px;
-        max-width: 230px; } }
+        max-width: 230px;
+        height: 55px; } }
   header .nav-col .navbad {
     display: block;
     float: right; }
@@ -337,10 +342,18 @@ header {
   header .small-menu {
     float: right;
     color: #686968;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     position: absolute;
     right: 13px;
     top: 19px; }
+
+    @media screen and (max-width: 770px) {
+      #menu {
+        z-index: 100;
+        background-color: beige;
+      }
+      
+    }
 
 @media screen and (max-width: 767px) {
   .navbar {
@@ -374,10 +387,10 @@ header {
   .slider-captions {
     bottom: 100px !important; }
 
-  width: 90%;
+  /* width: 90%;
   text-align: center;
   float: none;
-  margin: auto;
+  margin: auto; */
   .slider-captions .slider-title {
     font-size: 42px; } }
 @media screen and (max-width: 810px) {
@@ -591,37 +604,19 @@ header {
 
   /* ======================why choose us ==================================== */
   .site-section {
-    padding: 7rem 0; }
+    padding: 4rem 0; }
+
+    .site-section .mb-5 {
+      margin-bottom: 2rem !important;
+    }
+
     @media (max-width: 991.98px) {
       .site-section {
         padding: 3rem 0; } }
 
-        /* .number {
-          -webkit-box-flex: 0;
-          -ms-flex: 0 0 80px;
-          flex: 0 0 80px;
-          height: 80px;
-          border: 2px solid #fff;
-          position: relative;
-          display: block;
-          font-size: 1.5rem;
-          color: #fff; }
-           .number > span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-           .number:before {
-            right: 0;
-            z-index: 1;
-            position: absolute;
-            content: "";
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background: rgba(0, 166, 81, 0.5); } */
+        .site-section .mb-5 {
+          margin-bottom: 1rem !important;
+        }
 
             .feature-29012 .number {
               -webkit-box-flex: 0;
@@ -691,53 +686,10 @@ header {
               z-index: 2;
             }
 
-            /* .heading-20219 {
-              text-align: center;
-            } */
+      .site-section .container .ml-auto {
+        text-align: center;
+      }
             
-            
-
-/* ===================================== Our Blog CSS ================================== */
-.our-blog {
-  background-color: #FDFDFD;
-  padding: 40px; }
-
-@media screen and (max-width: 967px) {
-  .our-blog {
-    padding: 30px 0px; } }
-.our-blog .single-blog {
-  margin-bottom: 20px;
-  background-color: #FFF;
-  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54); }
-
-.our-blog .single-blog figure {
-  margin-bottom: 5px; }
-
-.our-blog .single-blog .blog-detail {
-  padding: 15px; }
-
-.our-blog .single-blog small {
-  color: #71b61b;
-  font-size: 12px; }
-
-.our-blog .single-blog h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  margin-top: 10px; }
-
-.our-blog .single-blog p {
-  text-align: justify;
-  text-indent: 20px; }
-
-.our-blog .single-blog .link a {
-  font-size: 12px;
-  color: #71b61b; }
-
-.our-blog .single-blog .link i {
-  padding-top: 6px;
-  margin-left: 5px;
-  color: #FFFFFF; }
-
 /* ===================================== Fooer CSS ================================== */
 .footer {
   padding: 50px;
@@ -963,7 +915,63 @@ header {
   stroke-linecap: round;
 }
 
-/* icons */
+/* icons and donate now in the footer*/
 .ulright .fab {
   font-size: 1.5em;
 }
+
+.nav-box {
+  text-align: center; /* Center text within .nav-box */
+}
+
+.ulright {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+}
+
+.ulright li {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 10px; /* Adjust margin as needed */
+}
+.donate-link {
+  text-align: left;
+}
+
+@media (max-width: 770px) {
+  .footer .nav-box {
+      /* text-align: left; */
+      border-radius: 10px;
+      /* margin: 10px; */
+  }
+  .ulright .fab {
+    font-size: 1.0em;
+  }
+
+  .ulright {
+    text-align: center; 
+  }
+
+  .ulright li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .donate-link {
+      text-align: center;
+      /* justify-content: center; */
+      margin-bottom: 10px;
+      /* padding: 10px; */
+      width: 70%;
+
+  }
+  .donate-link .btn {
+    align-self: center;
+    
+  }
+  .donate-link .btn .btn-title {
+    font-size: 1.0em;
+  }
+}
+
+
+
