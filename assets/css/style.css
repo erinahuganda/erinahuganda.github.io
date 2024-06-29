@@ -1,15 +1,6 @@
-/* =======================================================================
-Template Name: Youtubers
-Author:  SmartEye Technologies
-Author URI: www.smarteyeapps.com
-Version: 1.0
-coder name:Prabin Raja
-Description: This Template is created for Youtubers
-======================================================================= */
-/* ===================================== Import Variables ================================== */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
-/* ===================================== Basic CSS ==================================== */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -531,34 +522,6 @@ header {
     .about-us .image-part .about-quick-box .about-qcard .blu {
       color: #21d7d9; }
 
-/* ===================================== Events Home CSS ================================== */
-.events {
-  background-color: #efefef2e;
-  padding: 50px; }
-
-@media screen and (max-width: 940px) {
-  .events {
-    padding: 30px 10px; } }
-.events .event-ro .event-box {
-  text-align: center;
-  margin-bottom: 20px; }
-
-.events .event-ro .event-box img {
-  margin-bottom: 20px; }
-
-.events .event-ro .event-box h4 {
-  font-size: 18px; }
-
-.events .event-ro .event-box .raises {
-  margin-bottom: 10px; }
-
-.events .event-ro .event-box .raises span {
-  color: #71b61b; }
-
-.events .event-ro .event-box .desic {
-  font-size: 13px;
-  margin-bottom: 15px; }
-
 /* ===================================== Mission Vision CSS ================================== */
 .mission-vision {
   background-color: #FFF; }
@@ -574,33 +537,6 @@ header {
         padding: 30px 10px; } }
   .mission-vision .mv-det {
     margin: auto; }
-
-/* ===================================== Charity Number CSS ================================== */
-.doctor-message {
-  background-image: url("../images/slider/slider-2.jpg");
-  background-attachment: fixed;
-  background-size: cover; }
-  .doctor-message .session-title h2 {
-    color: #FFF; }
-
-.doctor-message .inner-lay {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 50px;
-  color: #FFF; }
-
-@media screen and (max-width: 940px) {
-  .doctor-message .inner-lay {
-    padding: 30px 10px; } }
-.doctor-message .inner-lay .numb {
-  text-align: center;
-  padding: 30px; }
-
-.doctor-message .inner-lay .numb h3 {
-  font-size: 42px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #CCC;
-  margin-bottom: 20px;
-  color: #FFF; }
 
   /* ======================why choose us ==================================== */
   .site-section {
@@ -937,7 +873,7 @@ header {
   text-align: left;
 }
 
-@media (max-width: 770px) {
+@media screen and (max-width: 770px) {
   .footer .nav-box {
       /* text-align: left; */
       border-radius: 10px;
